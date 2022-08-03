@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<!-- Demo styles -->
+<style>
+    body {
+        background-color: antiquewhite;
+    }
+
+    .swiper {
+        width: 370px;
+        height: 370px;
+        padding: 40px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* .swiper-pagination-bullet {
+        display: none;
+    } */
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-7">
+                <h1 class="mt-5">Swipper js</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae consectetur eaque! Magni tempore
+                    laborum exercitationem velit numquam temporibus? Aspernatur veniam culpa nesciunt quas, impedit amet
+                    totam dignissimos quibusdam sapiente aliquam doloribus modi in molestias ipsum placeat veritatis
+                    laboriosam voluptatem exercitationem beatae vel ea velit? Ut aperiam quasi totam omnis eum
+                    doloremque ex quo, delectus iusto. Adipisci laborum minus, corrupti rem totam, natus iure nam,
+                    itaque labore quia eum. Quos amet neque impedit sed officiis iste reprehenderit, expedita alias
+                    recusandae similique quibusdam quas. Necessitatibus odio porro incidunt, earum temporibus natus qui
+                    quae animi dolores, totam officiis architecto doloremque ipsa veniam!</p>
+                <button class="btn btn-success">Read More</button>
+            </div>
+            
+            <div class="col-md-5 swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/gensgirl1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/gensgirl2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/gensgirl3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/gensgirl4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/gensgirl5.jpg" />
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "flip",
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+          
+        });
+    </script>
+</body>
+
+</html>
